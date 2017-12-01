@@ -1,0 +1,226 @@
+<rg4>
+    <easyiv version="1.0" debugmode="2">
+        <SSVideo>
+        <!--
+        56	1	1	A3!B4!C1!D1	104	V	180.166.190.34	80	8227	di_AIPUCam2	0	0	0	0	N	0	Y	20	Y	admin	admin	NULL	N	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+        -->
+        <!--VideoType: 
+        	EZIV_CAMERATYPE_WEBCAM 	= 1,
+					EZIV_CAMERATYPE_FILE		= 2,
+					EZIV_CAMERATYPE_IPCAM		= 3,
+					EZIV_CAMERATYPE_CMS256	= 4,
+					EZIV_CAMERATYPE_CMS23		= 5,
+				-->
+            <Line>
+            		<VideoType>2</VideoType>
+                <ConnParam>D:\\ROSOO\\rslab\\a0-easyivs\\clips\\6.IntruderDetect.avi</ConnParam>
+                <ServerIP>127.0.0.1</ServerIP>
+                <ServerPort>8000</ServerPort>
+                <Account>admin</Account>
+                <DeviceOID>56</DeviceOID>
+                <NodeKey>A3!B4!C1!D1</NodeKey>
+                <Location>新竹科技园</Location>
+                <DeviceIP>180.166.190.34</DeviceIP>
+                <DevicePort>80</DevicePort>
+                <DeviceKey>8227</DeviceKey>
+                <DeviceID>56</DeviceID>
+                <ServiceID>V</ServiceID>
+                <DeviceLib>di_AIPUCam2</DeviceLib>
+                <ChannelNo>1</ChannelNo>
+                <DeviceAccount>admin</DeviceAccount>
+                <DevicePassword>123456</DevicePassword>
+                <Enabled>0</Enabled>
+                <rule>
+	                  <EventType id="1026" desc="Face Detect"></EventType>
+										<Activate>0</Activate>
+										<ROI sizex="1" sizey="1" frequency="15" scale="0" threshold="0" pattern="1" object="1" mod="0" motionthr="60" thetathr="5" centerpositionthr="70" B_Sensitive="0" F_Sensitive="0">0,0,100,100</ROI>
+										<road posx="33" posy="44" width="44" height="66" />
+										<time cancelalarm="120">10</time>
+                </rule>
+            </Line>
+            <!--
+            89	1	1	A3!B8!C1!D1	104	V	180.166.190.36	8101	5000	di_HBGKCam	0	0	0	0	N	0	Y	20	Y	admin	888888	NULL	N	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+						90	1	2	A3!B8!C1!D2	100	V	180.166.190.36	8101	5000	di_HBGKCam	0	0	0	0	N	0	Y	20	Y	admin	888888	NULL	N	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+						-->
+            <Line>
+            		<VideoType>4</VideoType>
+                <ConnParam></ConnParam>
+                <ServerIP>127.0.0.1</ServerIP>
+                <ServerPort>8000</ServerPort>
+                <Account>admin</Account>
+                <DeviceOID>89</DeviceOID>
+                <NodeKey>A3!B8!C1!D2</NodeKey>
+                <Location>汉邦高科</Location>
+                <DeviceIP>180.166.190.36</DeviceIP>
+                <DevicePort>8101</DevicePort>
+                <DeviceKey>5000</DeviceKey>
+                <DeviceID>89</DeviceID>
+                <ServiceID>V</ServiceID>
+                <DeviceLib>di_HBGKCam</DeviceLib>
+                <ChannelNo>1</ChannelNo>
+                <DeviceAccount>admin</DeviceAccount>
+                <DevicePassword>888888</DevicePassword>
+                <Enabled>1</Enabled>
+                <rule>
+		                <EventType id="1026" desc="Face Detect"></EventType>
+		                <Activate>1</Activate>
+		                <ROI sizex="1" sizey="1" frequency="15" scale="0" threshold="0" pattern="1" object="1" mod="0" motionthr="60" thetathr="5" centerpositionthr="70" B_Sensitive="0" F_Sensitive="0">0,0,100,100</ROI>
+		                <road posx="33" posy="44" width="44" height="66" />
+		                <time cancelalarm="120">10</time>
+                </rule>
+            </Line>
+						
+            <Line>
+            		<VideoType>4</VideoType>
+                <ServerIP>127.0.0.1</ServerIP>
+                <ServerPort>8000</ServerPort>
+                <Account>admin</Account>
+                <DeviceOID>56</DeviceOID>
+                <NodeKey>A3!B4!C1!D1</NodeKey>
+                <Location>Shanghai Office</Location>
+                <DeviceIP>180.166.190.34</DeviceIP>
+                <DevicePort>80</DevicePort>
+                <DeviceKey>100</DeviceKey>
+                <DeviceID>8227</DeviceID>
+                <ServiceID>V</ServiceID>
+                <DeviceLib>di_AIPUCam2</DeviceLib>
+                <ChannelNo>1</ChannelNo>
+                <DeviceAccount>admin</DeviceAccount>
+                <DevicePassword>123456</DevicePassword>
+                <ConnParam></ConnParam>
+                <Enabled>0</Enabled>
+                <rule>
+		                <EventType id="1026" desc="Face Detect"></EventType>
+		                <Activate>0</Activate>
+		                <ROI sizex="1" sizey="1" frequency="15" scale="0" threshold="0" pattern="1" object="1" mod="0" motionthr="60" thetathr="5" centerpositionthr="70" B_Sensitive="0" F_Sensitive="0">0,0,100,100</ROI>
+		                <road posx="33" posy="44" width="44" height="66" />
+		                <time cancelalarm="120">10</time>
+                </rule>
+            </Line>
+            <Line>
+                <ServerIP>127.0.0.1</ServerIP>
+                <ServerPort>8000</ServerPort>
+                <Account>Admin</Account>
+                <DeviceOID>4</DeviceOID>
+                <NodeKey>A3!B2!C1!D1</NodeKey>
+                <Location>UniSVR HQ</Location>
+                <DeviceIP>60.244.104.46</DeviceIP>
+                <DevicePort>80</DevicePort>
+                <DeviceKey>100</DeviceKey>
+                <DeviceID>4</DeviceID>
+                <ServiceID>V</ServiceID>
+                <DeviceLib>di_YokoCam5</DeviceLib>
+                <ChannelNo>1</ChannelNo>
+                <DeviceAccount>admin</DeviceAccount>
+                <DevicePassword>admin</DevicePassword>
+                <Enabled>0</Enabled>
+                <rule>
+		                <EventType id="1026" desc="Face Detect"></EventType>
+		                <Activate>0</Activate>
+		                <ROI sizex="1" sizey="1" frequency="15" scale="0" threshold="0" pattern="1" object="1" mod="0" motionthr="60" thetathr="5" centerpositionthr="70" B_Sensitive="0" F_Sensitive="0">0,0,100,100</ROI>
+		                <road posx="33" posy="44" width="44" height="66" />
+		                <time cancelalarm="120">10</time>
+                </rule>
+            </Line>
+        <!--
+            <Line>
+                <ServerIP>127.0.0.1</ServerIP>
+                <ServerPort>8000</ServerPort>
+                <Account>Admin</Account>
+                <DeviceOID>4</DeviceOID>
+                <NodeKey>A3!B2!C1!D1</NodeKey>
+                <Location>UniSVR HQ</Location>
+                <DeviceIP>60.244.104.46</DeviceIP>
+                <DevicePort>80</DevicePort>
+                <DeviceKey>100</DeviceKey>
+                <DeviceID>4</DeviceID>
+                <ServiceID>V</ServiceID>
+                <DeviceLib>di_YokoCam5</DeviceLib>
+                <ChannelNo>1</ChannelNo>
+                <DeviceAccount>admin</DeviceAccount>
+                <DevicePassword>admin</DevicePassword>
+                <Enabled>0</Enabled>
+                <rule>
+		                <EventType EventID="1026">ABNOrMAL DETECT for ATM</EventType>
+		                <Activate>0</Activate>
+		                <ROI sizex="1" sizey="1" frequency="15" scale="0" threshold="0" pattern="1" object="1" mod="0" motionthr="60" thetathr="5" centerpositionthr="70" B_Sensitive="0" F_Sensitive="0">0,0,100,100</ROI>
+		                <road posx="33" posy="44" width="44" height="66" />
+		                <time cancelalarm="120">10</time>
+                </rule>
+            </Line>
+            <Line>
+                <ServerIP>127.0.0.1</ServerIP>
+                <ServerPort>8000</ServerPort>
+                <Account>Admin</Account>
+                <DeviceOID>-858993460</DeviceOID>
+                <NodeKey>A3!B1!C1!D1</NodeKey>
+                <Location>8309f</Location>
+                <DeviceIP>10.131.1.239</DeviceIP>
+                <DevicePort>80</DevicePort>
+                <DeviceKey>100</DeviceKey>
+                <ServiceID>V</ServiceID>
+                <DeviceLib>di_CTCUCam</DeviceLib>
+                <ChannelNo>1</ChannelNo>
+                <DeviceAccount>admin</DeviceAccount>
+                <DevicePassword>admin</DevicePassword>
+                <Enabled>0</Enabled>
+                <rule>
+		                <EventType EventID="1034">Blur Detect</EventType>
+		                <Activate>0</Activate>
+		                <ROI sizex="1" sizey="1" frequency="15" scale="0" threshold="0" pattern="1" object="1" mod="0" motionthr="60" thetathr="5" centerpositionthr="70" B_Sensitive="0" F_Sensitive="0">0,0,100,100</ROI>
+		                <road posx="33" posy="44" width="44" height="66" />
+		                <time cancelalarm="120">10</time>
+                </rule>
+            </Line>
+            <Line>
+                <ServerIP>127.0.0.1</ServerIP>
+                <ServerPort>8000</ServerPort>
+                <Account>Admin</Account>
+                <DeviceOID>-858993460</DeviceOID>
+                <NodeKey>A3!B1!C1!D1</NodeKey>
+                <Location>8309f</Location>
+                <DeviceIP>10.131.1.239</DeviceIP>
+                <DevicePort>80</DevicePort>
+                <DeviceKey>100</DeviceKey>
+                <ServiceID>V</ServiceID>
+                <DeviceLib>di_CTCUCam</DeviceLib>
+                <ChannelNo>1</ChannelNo>
+                <DeviceAccount>admin</DeviceAccount>
+                <DevicePassword>admin</DevicePassword>
+                <Enabled>0</Enabled>
+                <rule>
+		                <EventType EventID="1033">Suspect Detection</EventType>
+		                <Activate>0</Activate>
+		                <ROI sizex="1" sizey="1" frequency="15" scale="0" threshold="0" pattern="1" object="1" mod="0" motionthr="60" thetathr="5" centerpositionthr="70" B_Sensitive="0" F_Sensitive="0">40,171,404,454</ROI>
+		                <road posx="33" posy="44" width="44" height="66" />
+		                <time cancelalarm="120">5</time>
+                </rule>
+            </Line>
+            <Line>
+                <ServerIP>127.0.0.1</ServerIP>
+                <ServerPort>8000</ServerPort>
+                <Account>Admin</Account>
+                <DeviceOID>7057008</DeviceOID>
+                <NodeKey>A3!B1!C2!D1</NodeKey>
+                <Location>8309F55</Location>
+                <DeviceIP>10.131.1.55</DeviceIP>
+                <DevicePort>80</DevicePort>
+                <DeviceKey>100</DeviceKey>
+                <ServiceID>V</ServiceID>
+                <DeviceLib>di_CTCUCam</DeviceLib>
+                <ChannelNo>1</ChannelNo>
+                <DeviceAccount>admin</DeviceAccount>
+                <DevicePassword>admin</DevicePassword>
+                <Enabled>0</Enabled>
+                <rule>
+		                <EventType EventID="1032">MALICIOUS DETECT</EventType>
+		                <Activate>0</Activate>
+		                <ROI sizex="1" sizey="1" frequency="15" scale="0" threshold="0" pattern="1" object="1" mod="0" motionthr="60" thetathr="5" centerpositionthr="70" B_Sensitive="0" F_Sensitive="0">0,0,100,100</ROI>
+		                <road posx="33" posy="44" width="44" height="66" />
+		                <time cancelalarm="120">10</time>
+                </rule>
+            </Line>
+           -->
+        </SSVideo>
+    </easyiv>
+</rg4>

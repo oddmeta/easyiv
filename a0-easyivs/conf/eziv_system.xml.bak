@@ -1,0 +1,12 @@
+<rg4>
+    <easyiv version="1.0" debugmode="2">
+        <Auth>
+            <User>Admin</User>
+            <Pwd>pass</Pwd>
+        </Auth>
+        <trigger before="3" after="5" />
+        <reencode enabled="1" />
+        <record_stream enabled="1" format="1" path="f://media" />
+        <record_result enabled="1" format="1" path="f://media" />
+    </easyiv>
+</rg4>

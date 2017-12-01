@@ -1,0 +1,8 @@
+<rg4>
+    <Line>
+        <ServerIP>127.0.0.1</ServerIP>
+        <ServerPort>8000</ServerPort>
+        <Account>Admin</Account>
+        <Password />
+    </Line>
+</rg4>
